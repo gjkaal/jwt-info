@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>netcoreapp2.2;netstandard2.0;net46;net47</TargetFrameworks>
+    </PropertyGroup>
+    <PropertyGroup>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>JSON Web Token decoding</Description>
+        <Copyright>(c) 2019 - nice2experience.com - all rights reserved</Copyright>
+        <PackageTags>authentication, jwt</PackageTags>
+        <NeutralLanguage>en</NeutralLanguage>
+        <Authors>GJH Kaal</Authors>
+        <Company>nice2experience</Company>
+        <PackageReleaseNotes>
+            Reorganized project, 
+            added build script
+        </PackageReleaseNotes>
+        <RepositoryUrl>https://github.com/gjkaal/jwt-info</RepositoryUrl>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <VersionPrefix>1.0.2</VersionPrefix>
+        <VersionSuffix></VersionSuffix>
+        <IncludeSymbols>false</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="License.md" PackagePath="" Pack="true" >
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>
